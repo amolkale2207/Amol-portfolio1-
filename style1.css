@@ -1,0 +1,191 @@
+/* -----poppins----- */
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Bokor&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Merienda:wght@300&family=Orbitron:wght@400..900&family=Ponnala&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    /* border: 1px solid black; */
+}
+i{
+    margin-right: .2rem;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Atma", sans-serif;
+    letter-spacing: 1px;
+    font: bolder;
+    font-size: larger;
+}
+p{
+    font-family: "Sour Gummy", cursive;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.section{
+    height: 37.2rem;
+    background-color: #f8f8f8;
+    padding: 2rem;
+    background-image: url(/img/profil.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-x: right;
+}
+ul li a{
+    transition: 1s ease-in-out;
+}
+ul li a:hover{
+    color: rgb(6, 205, 255) !important;
+}
+.form-body{
+    border-radius: 2rem;
+    padding: 1rem;
+    transition: 1s ease-in-out;
+    margin-left: 10rem;
+}
+.form-body:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 1rem rgba(12, 12, 12, 0.788);
+    background-image: linear-gradient(180deg , rgba(48, 45, 45, 0.432),rgba(255, 255, 255, 0.377));
+    color:rgb(53, 52, 52);
+}
+.mb-3{
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+.mb-3 input{
+    border: none;
+    background: transparent;
+    /* border-bottom: 2px solid #0d0d0e; */
+    border-radius: 1rem !important;
+}
+.mb-3 input:focus{
+    color: black;
+    border-radius: 5rem;
+    border-color: 0;
+    outline: none;
+    background: transparent;
+    border: none;
+}
+.mb-3 input::placeholder{
+    color: #0c0c0c;
+    font-weight: 400;
+}
+
+
+/* feedback Form design  */
+.resarea{
+    border: none;
+    background: transparent !important;
+    border-bottom: 2px solid #0d0d0e;
+    border-radius: 1rem !important;
+
+}
+.resarea:focus{
+    color: black;
+    color: black;
+    border-radius: 5rem;
+    border-color: 0;
+    outline: none;
+    border: none;
+}
+.resarea::placeholder{
+    color: black;
+    font-weight: 600;
+}
+/* feed form complete */
+
+#submit{
+    background-color: #12b0e0;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    padding:.8rem 1rem;
+    transition: 1s ease-in-out;
+}
+
+#submit:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 1rem #12b0e0;
+    color: white;
+}
+@media screen and (max-width:680px){
+    .info{
+        top:10rem;
+        /* border: 5px solid black; */
+        position: relative;
+        align-items: baseline;
+        /* background-image: linear-gradient(45deg, rgba(255, 0, 0, 0.637),blue,white); */
+        backdrop-filter: blur(.01rem) !important;
+    }
+    .form-body{
+        margin-top: 11rem !important;
+        border: 1px solid;
+        box-shadow: 0 0 1rem black;
+        width: 100%;
+        height: 100%;
+        margin: 5rem 0 0 auto;
+    }
+    .section{
+        height: auto;
+        width: auto;
+    }
+    .marquee-container{
+        height: auto;
+        width: auto;
+    }
+}
+
+
+/* ------blogs----- */
+.hero-sec{
+    background-color: #f8f8f8;
+    height: 40rem;
+}
+.marquee-container {
+    background-color: #f8f8f8;
+    overflow: hidden;
+    position: relative;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+}
+
+.marquee-content {
+    margin-top: 5rem;
+    display: flex;
+    white-space: nowrap;
+    animation: slide 40s linear infinite;
+}
+
+.marquee-item {
+    height: 25rem;
+    width: 10rem;
+    background-color: red;
+    margin-left: 5rem;
+    text-align: center;
+    color: white;
+    filter: drop-shadow(1rem 0 1rem rgb(129, 125, 125));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: wrap;
+}
+
+.marquee-item img {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: 100%;
+    background-repeat: no-repeat;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
